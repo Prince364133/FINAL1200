@@ -842,14 +842,17 @@
 </style>
 
 
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 <!-- Our Project Start -->
 <div class="our-project">
   <div class="container">
     <div class="row section-row align-items-center">
       <div class="col-lg-5">
         <div class="section-title">
-          <h3 class="wow fadeInUp"style="font-size: 25px;">latest project</h3>
-          <h2 class="text-anime-style-2" data-cursor="-opaque">Creative projects that define<span> our style</span></h2>
+          <h3 class="wow fadeInUp" style="font-size: 25px;">latest project</h3>
+          <h2 class="text-anime-style-2" data-cursor="-opaque">Creative projects that define <span> our style</span></h2>
         </div>
       </div>
       <div class="col-lg-7">
@@ -864,23 +867,24 @@
     <!-- Swiper Project Carousel -->
     <div class="swiper projectSwiper mt-4">
       <div class="swiper-wrapper">
+
         <!-- Slide 1 -->
         <div class="swiper-slide">
-          <div class="project-item-box architecture bedroom">
-            <div class="project-item wow fadeInUp">
+          <div class="project-item-box" onclick="openGallery(['images/project-1.jpg','images/project-2.jpg','images/project-3.jpg','images/project-4.jpg'])">
+            <div class="project-item">
               <div class="project-image">
                 <div class="project-featured-image">
-                  <figure class="image-anime">
-                    <img src="images/project-1.jpg" alt="">
-                  </figure>
+                  <figure><img src="images/project-1.jpg" alt=""></figure>
                 </div>
                 <div class="project-btn">
-                  <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                  <a href="#" onclick="event.stopPropagation(); openGallery(['images/project-1.jpg','images/project-2.jpg','images/project-1.jpg','images/project-1.jpg'])">
+                    <img src="images/arrow-white.svg" alt="">
+                  </a>
                 </div>
               </div>
               <div class="project-content">
                 <h3>residential spaces</h3>
-                <h2><a href="project-single.html">urban retreat: modern design meets comfort</a></h2>
+                <h2><a href="#">urban retreat: modern design meets comfort</a></h2>
               </div>
             </div>
           </div>
@@ -888,21 +892,21 @@
 
         <!-- Slide 2 -->
         <div class="swiper-slide">
-          <div class="project-item-box interior kitchen">
-            <div class="project-item wow fadeInUp" data-wow-delay="0.2s">
+          <div class="project-item-box" onclick="openGallery(['images/project-1.jpg','images/project-2.jpg','images/project-2.jpg','images/project-2.jpg'])">
+            <div class="project-item">
               <div class="project-image">
                 <div class="project-featured-image">
-                  <figure class="image-anime">
-                    <img src="images/project-2.jpg" alt="">
-                  </figure>
+                  <figure><img src="images/project-2.jpg" alt=""></figure>
                 </div>
                 <div class="project-btn">
-                  <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                  <a href="#" onclick="event.stopPropagation(); openGallery(['images/project-4.jpg','images/project-2.jpg','images/project-2.jpg','images/project-2.jpg'])">
+                    <img src="images/arrow-white.svg" alt="">
+                  </a>
                 </div>
               </div>
               <div class="project-content">
                 <h3>luxury homes</h3>
-                <h2><a href="project-single.html">luxurious loft: industrial chic for living</a></h2>
+                <h2><a href="#">luxurious loft: industrial chic for living</a></h2>
               </div>
             </div>
           </div>
@@ -910,21 +914,21 @@
 
         <!-- Slide 3 -->
         <div class="swiper-slide">
-          <div class="project-item-box furniture architecture">
-            <div class="project-item wow fadeInUp" data-wow-delay="0.4s">
+          <div class="project-item-box" onclick="openGallery(['images/project-3.jpg','images/project-3.jpg','images/project-3.jpg','images/project-3.jpg'])">
+            <div class="project-item">
               <div class="project-image">
                 <div class="project-featured-image">
-                  <figure class="image-anime">
-                    <img src="images/project-3.jpg" alt="">
-                  </figure>
+                  <figure><img src="images/project-3.jpg" alt=""></figure>
                 </div>
                 <div class="project-btn">
-                  <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                  <a href="#" onclick="event.stopPropagation(); openGallery(['images/project-3.jpg','images/project-3.jpg','images/project-3.jpg','images/project-3.jpg'])">
+                    <img src="images/arrow-white.svg" alt="">
+                  </a>
                 </div>
               </div>
               <div class="project-content">
                 <h3>outdoor living spaces</h3>
-                <h2><a href="project-single.html">coastal vibes: serenity by the sea</a></h2>
+                <h2><a href="#">coastal vibes: serenity by the sea</a></h2>
               </div>
             </div>
           </div>
@@ -932,21 +936,21 @@
 
         <!-- Slide 4 -->
         <div class="swiper-slide">
-          <div class="project-item-box kitchen bedroom">
-            <div class="project-item wow fadeInUp" data-wow-delay="0.6s">
+          <div class="project-item-box" onclick="openGallery(['images/project-4.jpg','images/project-4.jpg','images/project-4.jpg','images/project-4.jpg'])">
+            <div class="project-item">
               <div class="project-image">
                 <div class="project-featured-image">
-                  <figure class="image-anime">
-                    <img src="images/project-4.jpg" alt="">
-                  </figure>
+                  <figure><img src="images/project-4.jpg" alt=""></figure>
                 </div>
                 <div class="project-btn">
-                  <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                  <a href="#" onclick="event.stopPropagation(); openGallery(['images/project-4.jpg','images/project-4.jpg','images/project-4.jpg','images/project-4.jpg'])">
+                    <img src="images/arrow-white.svg" alt="">
+                  </a>
                 </div>
               </div>
               <div class="project-content">
                 <h3>modern designs</h3>
-                <h2><a href="project-single.html">minimalist haven: simple, clean, inviting spaces</a></h2>
+                <h2><a href="#">minimalist haven: simple, clean, inviting spaces</a></h2>
               </div>
             </div>
           </div>
@@ -955,12 +959,24 @@
       </div>
     </div>
     <!-- Swiper Project Carousel End -->
-
   </div>
 </div>
 <!-- Our Project End -->
+
+<!-- Image Gallery Popup -->
+<div id="imageGalleryPopup" onclick="handleOverlayClick(event)" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000d; z-index:9999;">
+  <div id="popupContent" style="position:relative; max-width:700px; margin:60px auto; background:#fff; padding:20px; border-radius:10px; text-align:center;">
+    <span onclick="closeGallery()" style="position:absolute; top:10px; right:20px; cursor:pointer; font-size:50px;">&times;</span>
+    <button onclick="prevImage()" style="position:absolute; top:50%; left:-60px; transform:translateY(-50%); font-size:30px; background:#fff; border:none; padding:10px; border-radius:50%;">&#10094;</button>
+    <img id="popupMainImage" src="" style="max-width:100%; border-radius:8px;" />
+    <button onclick="nextImage()" style="position:absolute; top:50%; right:-60px; transform:translateY(-50%); font-size:30px; background:#fff; border:none; padding:10px; border-radius:50%;">&#10095;</button>
+  </div>
+</div>
+
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper Setup -->
 <script>
   var swiper = new Swiper(".projectSwiper", {
     slidesPerView: 2,
@@ -971,15 +987,50 @@
       disableOnInteraction: false
     },
     breakpoints: {
-      0: {
-        slidesPerView: 1
-      },
-      768: {
-        slidesPerView: 2
-      }
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 }
     }
   });
 </script>
+
+<!-- Gallery Script -->
+<script>
+  let galleryImages = [];
+  let currentImageIndex = 0;
+
+  function openGallery(images) {
+    galleryImages = images;
+    currentImageIndex = 0;
+    showCurrentImage();
+    document.getElementById("imageGalleryPopup").style.display = "block";
+  }
+
+  function closeGallery() {
+    document.getElementById("imageGalleryPopup").style.display = "none";
+  }
+
+  function showCurrentImage() {
+    document.getElementById("popupMainImage").src = galleryImages[currentImageIndex];
+  }
+
+  function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    showCurrentImage();
+  }
+
+  function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    showCurrentImage();
+  }
+
+  function handleOverlayClick(event) {
+    const popupContent = document.getElementById("popupContent");
+    if (!popupContent.contains(event.target)) {
+      closeGallery();
+    }
+  }
+</script>
+
 
 
     <!-- How We Work Start -->
