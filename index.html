@@ -39,53 +39,6 @@
 
 </head>
 <body>
-<!-- 🔘 WhatsApp Form Button -->
-
-
-<!-- 💬 WhatsApp Popup Form -->
-<div id="whatsappPopupForm" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); z-index: 9999; justify-content: center; align-items: center;">
-  <div style="background: white; padding: 24px 30px; border-radius: 12px; width: 90%; max-width: 400px; animation: popupFade 0.4s ease-out;">
-    <h3 style="margin-top: 0; font-size: 22px;">Send Message on WhatsApp</h3>
-    <form id="whatsappForm">
-      <input type="text" id="waName" placeholder="Your Name" required style="width: 100%; padding: 10px; margin: 10px 0;">
-      <input type="email" id="waEmail" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 10px 0;">
-      <input type="tel" id="waPhone" placeholder="Your Phone Number" required style="width: 100%; padding: 10px; margin: 10px 0;">
-      <button type="submit" style="background: #25d366; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin-top: 10px;">Send via WhatsApp</button>
-      <button type="button" onclick="closeWhatsappForm()" style="background: transparent; color: #666; margin-left: 10px; border: none;">Cancel</button>
-    </form>
-  </div>
-</div>
-
-<!-- 🌀 Popup Animation -->
-<style>
-@keyframes popupFade {
-  0% { transform: scale(0.8); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
-</style>
-<script>
-  document.getElementById("openWhatsappFormBtn").addEventListener("click", function () {
-    document.getElementById("whatsappPopupForm").style.display = "flex";
-  });
-
-  function closeWhatsappForm() {
-    document.getElementById("whatsappPopupForm").style.display = "none";
-  }
-
-  document.getElementById("whatsappForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    const name = document.getElementById("waName").value;
-    const email = document.getElementById("waEmail").value;
-    const phone = document.getElementById("waPhone").value;
-
-    const message = `Hello, I'm ${name}. My email is ${email} and my phone number is ${phone}. I want to connect with you!`;
-
-    const whatsappUrl = `https://wa.me/91620570501?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
-
-    closeWhatsappForm();
-  });
-</script>
 
     <!-- Preloader Start -->
 	<div class="preloader">
