@@ -141,7 +141,7 @@
   }
 </style>
 
-                                <li class="nav-item">
+<!--                                 <li class="nav-item">
   <a class="nav-link nav-glow" href="/FINAL1200/service-single.html">service Details</a>
 </li>
 
@@ -162,7 +162,7 @@
       0 0 6px rgba(255, 255, 255, 0.8),
       0 0 12px rgba(255, 255, 255, 0.6);
   }
-</style>
+</style> -->
 
                                   <li class="nav-item">
   <a class="nav-link nav-glow" href="/FINAL1200/image-gallery.html">image gallery</a>
@@ -187,7 +187,7 @@
   }
 </style>
 
-                                       <li class="nav-item">
+<!--                                        <li class="nav-item">
   <a class="nav-link nav-glow" href="/FINAL1200/faqs.html">FAQ</a>
 </li>
 
@@ -209,7 +209,7 @@
       0 0 12px rgba(255, 255, 255, 0.6);
   }
 </style>
-
+ -->
 <li class="nav-item">
   <a class="nav-link nav-glow" href="/FINAL1200/contact.html">contact us !</a>
 </li>
@@ -245,11 +245,63 @@
                                 </li> -->                        
                             </ul>
                         </div>
-                        <!-- Header Btn Start -->
+                        <!-- whatsapp from Btn Start -->
                         <div class="header-btn d-inline-flex">
-                            <a href="contact.html" class="btn-default">get in touch</a>
-                        </div>
-                        <!-- Header Btn End -->
+  <a href="javascript:void(0);" class="btn-default" onclick="openWhatsappPopup()">get in touch</a>
+</div>
+<!-- WhatsApp Popup Form -->
+<div id="whatsappFormPopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #00000080; z-index: 9999; justify-content: center; align-items: center;">
+  <div style="background: #fff; padding: 30px; border-radius: 12px; width: 90%; max-width: 400px; position: relative; box-shadow: 0 0 20px rgba(0,0,0,0.3); animation: slideIn 0.4s ease-out;">
+    <button onclick="closeWhatsappPopup()" style="position: absolute; top: 10px; right: 15px; font-size: 20px; background: none; border: none; cursor: pointer;">&times;</button>
+    <h3 style="margin-bottom: 20px;">Send Message via WhatsApp</h3>
+    <form onsubmit="sendToWhatsapp(event)">
+      <input type="text" id="userName" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      <input type="email" id="userEmail" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      <input type="tel" id="userPhone" placeholder="Your Phone" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;">
+      <button type="submit" style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">Send via WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<!-- Slide-in animation -->
+<style>
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+<script>
+  function openWhatsappPopup() {
+    document.getElementById('whatsappFormPopup').style.display = 'flex';
+  }
+
+  function closeWhatsappPopup() {
+    document.getElementById('whatsappFormPopup').style.display = 'none';
+  }
+
+  function sendToWhatsapp(event) {
+    event.preventDefault();
+    const name = document.getElementById('userName').value.trim();
+    const email = document.getElementById('userEmail').value.trim();
+    const phone = document.getElementById('userPhone').value.trim();
+    
+    const message = `Hello, I'm ${name}. My email is ${email} and my phone number is ${phone}. I want to get in touch.`;
+    
+    const whatsappNumber = '620570501'; // ← Make sure this is correct
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappLink, '_blank');
+    closeWhatsappPopup();
+  }
+</script>
+
+                        <!-- whatsapp form Btn End -->
 					</div>
 					<!-- Main Menu End -->
 					<div class="navbar-toggle"></div>
