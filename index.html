@@ -372,7 +372,7 @@
     const name = document.getElementById('userName').value.trim();
     const phone = document.getElementById('userPhone').value.trim();
     const message = `Hello, I'm ${name}. My phone number is ${phone}. I want to get in touch.`;
-    const whatsappNumber = '8830219839'; // your number without + or spaces
+    const whatsappNumber = '+918830219839'; // your number without + or spaces
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
     closeWhatsappPopup();
