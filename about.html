@@ -1084,109 +1084,125 @@ From materials to finishes, our work is backed by the brands that set industry s
                         </div>
                         <!-- Section Title End -->
 
-                        <!-- Client Logo Slider Start -->
-                        <div class="our-client-slider">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (1).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
+                    <!-- Logo Slider Section -->
+<div class="logo-slider-section">
+  <div class="swiper logoSwiper">
+    <div class="swiper-wrapper">
+      <!-- Repeat this block for each logo -->
+      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (1).png" alt="Logo 1">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (2).png" alt="Logo 2">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (3).png" alt="Logo 3">
+        </div>
+      </div>
+	      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (4).png" alt="Logo 2">
+        </div>
+      </div>
+	      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (5).png" alt="Logo 2">
+        </div>
+      </div>
+	      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (6).png" alt="Logo 2">
+        </div>
+      </div>
+	      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (7).png" alt="Logo 2">
+        </div>
+      </div>
+	      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (8).png" alt="Logo 2">
+        </div>
+      </div>
+	      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (9).png" alt="Logo 2">
+        </div>
+      </div>
+	      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (10).png" alt="Logo 2">
+        </div>
+      </div>
+	      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (11).png" alt="Logo 2">
+        </div>
+      </div>
+      <!-- Add more logos as needed -->
+    </div>
+  </div>
+</div>
 
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (2).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
+<!-- Swiper CSS (already added on your site? Skip this) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (3).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-                                    
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (4).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-                                    
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (5).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
+<!-- Logo Slider Custom CSS -->
+<style>
+  .logo-slider-section {
+    padding: 40px 0;
+  }
 
-					 <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (6).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
+  .logo-box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 10px;
+    
+  }
 
-					 <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (7).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
+  .logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+</style>
 
-					 <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (8).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
+<!-- Swiper JS (already added on your site? Skip this) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-					 <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (9).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
+<!-- Logo Slider JS -->
+<script>
+  const logoSwiper = new Swiper('.logoSwiper', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 20,
+    slidesPerView: 3,
+    breakpoints: {
+      768: {
+        slidesPerView: 6,
+      }
+    }
+  });
+</script>
 
-					 <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (10).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-
-					 <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (11).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-
-					 <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="client-logo">
-                                            <img src="images/001 (5).png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Client Logo Slider End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How We Work End -->
                     </div>
                 </div>
             </div>
