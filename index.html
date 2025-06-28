@@ -1216,101 +1216,80 @@
                     </div>
                     <!-- How We Work List End -->
 
-                    <!-- How Work Company Slider Start -->
-                    <div class="how-work-company-slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001-_8__1.svg" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
+                    <!-- Logo Slider Section -->
+<div class="logo-slider-section">
+  <div class="swiper logoSwiper">
+    <div class="swiper-wrapper">
+      <!-- Repeat this block for each logo -->
+      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (1).png" alt="Logo 1">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (2).png" alt="Logo 2">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="logo-box">
+          <img src="images/001 (7).png" alt="Logo 3">
+        </div>
+      </div>
+      <!-- Add more logos as needed -->
+    </div>
+  </div>
+</div>
 
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (2).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
+<!-- Swiper CSS (already added on your site? Skip this) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-                                 <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (3).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
+<!-- Logo Slider Custom CSS -->
+<style>
+  .logo-slider-section {
+    padding: 40px 0;
+  }
 
-                                 <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (4).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
+  .logo-box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
 
-                                 <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (5).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
+  .logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+</style>
 
-                                 <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (6).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
+<!-- Swiper JS (already added on your site? Skip this) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-                                 <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (7).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
+<!-- Logo Slider JS -->
+<script>
+  const logoSwiper = new Swiper('.logoSwiper', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 20,
+    slidesPerView: 3,
+    breakpoints: {
+      768: {
+        slidesPerView: 6,
+      }
+    }
+  });
+</script>
 
-                                 <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (8).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
-
-                               <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (9).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
-
-                                 <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (10).png" alt="">
-                                    </div>
-                                </div>
-                                <!-- Company Support Logo End -->
-                                
-                                <!-- Company Support Logo Start -->
-                                <div class="swiper-slide">
-                                    <div class="company-logo">
-                                        <img src="images/001 (11).png" alt="">
-                                    </div>
-                                </div>
-                              <!-- Company Support Logo End -->
-                            </div>
-                        </div>
-                    </div> 
-                    <!-- How Work Company Slider End -->
                 </div>
             </div>
         </div>
@@ -1896,3 +1875,4 @@
     }
   }
 </style></html>
+ 
