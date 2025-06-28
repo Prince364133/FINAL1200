@@ -259,13 +259,19 @@
 
 <!-- WhatsApp Popup Form -->
 <div id="whatsappFormPopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #00000080; z-index: 9999; justify-content: center; align-items: center;">
-  <div style="background: #fff; padding: 30px; border-radius: 12px; width: 90%; max-width: 400px; position: relative; box-shadow: 0 0 20px rgba(0,0,0,0.3); animation: slideIn 0.4s ease-out;">
-    <button onclick="closeWhatsappPopup()" style="position: absolute; top: 10px; right: 15px; font-size: 20px; background: none; border: none; cursor: pointer;">&times;</button>
-    <h3 style="margin-bottom: 20px;">BOOK A FREE CONSULTATION</h3>
-    <form onsubmit="sendToWhatsapp(event)">
-      <input type="text" id="userName" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: 1px solid #ccc;">
-      <input type="tel" id="userPhone" placeholder="Your Phone" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ccc;">
-      <button type="submit" style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">BOOK</button>
+  <div style="background: #fff; padding: 30px 25px; border-radius: 12px; width: 90%; max-width: 400px; position: relative; box-shadow: 0 0 20px rgba(0,0,0,0.3); animation: slideIn 0.4s ease-out; text-align: center;">
+    
+    <!-- Close Button -->
+    <button onclick="closeWhatsappPopup()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; background: none; border: none; cursor: pointer;">&times;</button>
+    
+    <!-- Heading -->
+    <h3 style="margin-bottom: 20px; font-size: 20px; font-weight: bold;">BOOK A FREE CONSULTATION</h3>
+    
+    <!-- Form -->
+    <form onsubmit="sendToWhatsapp(event)" style="display: flex; flex-direction: column; gap: 15px;">
+      <input type="text" id="userName" placeholder="Your Name" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      <input type="tel" id="userPhone" placeholder="Your Phone" required style="padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      <button type="submit" style="background-color: #25D366; color: white; padding: 12px 0; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">BOOK NOW ON WHATSAPP</button>
     </form>
   </div>
 </div>
@@ -284,10 +290,10 @@
 }
 </style>
 
+<!-- Script -->
 <script>
   function openWhatsappPopup() {
-    const popup = document.getElementById('whatsappFormPopup');
-    popup.style.display = 'flex';
+    document.getElementById('whatsappFormPopup').style.display = 'flex';
   }
 
   function closeWhatsappPopup() {
@@ -298,8 +304,8 @@
     event.preventDefault();
     const name = document.getElementById('userName').value.trim();
     const phone = document.getElementById('userPhone').value.trim();
-    const message = `Hello, I'm ${name}. My phone number is ${phone}. I want to get in touch.`;
 
+    const message = `Hello, I'm ${name}. My phone number is ${phone}. I want to get in touch.`;
     const whatsappNumber = '+918830219839';
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
@@ -307,6 +313,7 @@
     closeWhatsappPopup();
   }
 </script>
+
 
 					</div>
 					<!-- Main Menu End -->
@@ -1225,7 +1232,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f9f9f9;
+    background: #7C877F;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
